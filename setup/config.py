@@ -50,15 +50,15 @@ use_resume_generator = False       # True or False ,   This feature may only wor
 # ----------------------------------------------  AUTO APPLIER  ---------------------------------------------- #
 
 # Login Credentials for LinkedIn
-username = "username@example.com"  # Enter your username in the quotes
-password = "example_password"      # Enter your password in the quotes
+username = "suleman361@gmail.com"  # Enter your username in the quotes
+password = "Godisgreat19"      # Enter your password in the quotes
 
 # These Sentences are Searched in LinkedIn
 # Enter your search terms inside '[ ]' with quotes ' "searching title" ' for each search followed by comma ', ' Eg: ["Software Engineer", "Software Developer", "Selenium Developer"]
-search_terms = ["Software Engineer", "Software Developer"]
+search_terms = ['Senior iOS Engineer', 'Lead iOS Developer', 'Principal iOS Engineer', 'iOS Architect', 'iOS Team Lead', 'Senior Android Engineer', 'Lead Android Developer', 'Principal Android Engineer', 'Android Architect', 'Android Team Lead', 'Senior Flutter Engineer', 'Lead Flutter Developer', 'Principal Flutter Engineer', 'Flutter Architect', 'Flutter Team Lead', 'Senior React Native Engineer', 'Lead React Native Developer', 'Principal React Native Engineer', 'React Native Architect', 'React Native Team Lead']
 
 # Search location, this will be filled in "City, state, or zip code" search box. If left empty as "", tool will not fill it.
-search_location = ""               # Some valid examples: "", "United States", "India", "Chicago, Illinois, United States", "90001, Los Angeles, California, United States", "Bengaluru, Karnataka, India", etc.
+search_location = "Remote"               # Some valid examples: "", "United States", "India", "Chicago, Illinois, United States", "90001, Los Angeles, California, United States", "Bengaluru, Karnataka, India", etc.
 
 
 # >>>>>>>>>>> Job Search Filters <<<<<<<<<<<
@@ -71,22 +71,23 @@ question_3 = []                    # (dynamic multiple select)
 
 '''
 
-sort_by = ""                       # "Most recent", "Most relevant" or ("" to not select) 
-date_posted = "Past Month"         # "Any time", "Past month", "Past week", "Past 24 hours" or ("" to not select)
+sort_by = "Most relevant"                      # "Most recent", "Most relevant" or ("" to not select)
+date_posted = "Past month"         # "Any time", "Past month", "Past week", "Past 24 hours" or ("" to not select)
 salary = ""                        # "$40,000+", "$60,000+", "$80,000+", "$100,000+", "$120,000+", "$140,000+", "$160,000+", "$180,000+", "$200,000+"
 
 easy_apply_only = True             # True or False
 
-experience_level = []              # (multiple select) "Internship", "Entry level", "Associate", "Mid-Senior level", "Director", "Executive"
+experience_level = ["Associate", "Mid-Senior level"]              # (multiple select) "Internship", "Entry level", "Associate", "Mid-Senior level", "Director", "Executive"
 job_type = []                      # (multiple select) "Full-time", "Part-time", "Contract", "Temporary", "Volunteer", "Internship", "Other"
-on_site = []                       # (multiple select) "On-site", "Remote", "Hybrid"
+on_site = ["Remote"]                       # (multiple select) "On-site", "Remote", "Hybrid"
 
 companies = []                     # (dynamic multiple select) make sure the name you type in list exactly matches with the company name you're looking for, including capitals. 
                                    # Eg: "7-eleven", "Google","X, the moonshot factory","YouTube","CapitalG","Adometry (acquired by Google)","Meta","Apple","Byte Dance","Netflix", "Snowflake","Mineral.ai","Microsoft","JP Morgan","Barclays","Visa","American Express", "Snap Inc", "JPMorgan Chase & Co.", "Tata Consultancy Services", "Recruiting from Scratch", "Epic", and so on...
-location = []                      # (dynamic multiple select)
+location = ["United States"]                      # (dynamic multiple select)
 industry = []                      # (dynamic multiple select)
 job_function = []                  # (dynamic multiple select)
-job_titles = []                    # (dynamic multiple select)
+job_titles = ['Senior iOS Engineer', 'Lead iOS Developer', 'Principal iOS Engineer', 'iOS Architect', 'iOS Team Lead', 'Senior Android Engineer', 'Lead Android Developer', 'Principal Android Engineer', 'Android Architect', 'Android Team Lead', 'Senior Flutter Engineer', 'Lead Flutter Developer', 'Principal Flutter Engineer', 'Flutter Architect', 'Flutter Team Lead', 'Senior React Native Engineer', 'Lead React Native Developer', 'Principal React Native Engineer', 'React Native Architect', 'React Native Team Lead']
+                  # (dynamic multiple select)
 benefits = []                      # (dynamic multiple select)
 commitments = []                   # (dynamic multiple select)
 
@@ -99,45 +100,72 @@ fair_chance_employer = False       # True or False
 # >>>>>>>>>>> Easy Apply Questions & Inputs <<<<<<<<<<<
 
 # Phone number (required), make sure it's valid.
-phone_number = "9876543210"        # Enter your 10 digit number in quotes Eg: "9876543210"
+phone_number = "4086017007"        # Enter your 10 digit number in quotes Eg: "9876543210"
 
 # Give an relative or absolute path of your default resume to be uploaded. If file in not found, will continue using your previously uploaded resume in LinkedIn.
-default_resume_path = "all resumes/default/resume.pdf"      # (In Development)
+default_resume_path = "/Users/sulemanimdad/Documents/Developer/Auto_job_applier_linkedIn/setup/resumes/default/resume.pdf"      # (In Development)
 
 # What do you want to answer for questions that ask about years of experience you have, this is different from current_experience? 
-years_of_experience = "1"          # A number in quotes Eg: "0","1","2","3","4", etc.
+years_of_experience = "16"          # A number in quotes Eg: "0","1","2","3","4", etc.
 
 # Do you need visa sponsorship now or in future?
 require_visa = "No"               # "Yes" or "No"
 
 # What is the status of your citizenship? # If left empty as "", tool will not answer the question. However, note that some companies make it compulsory to be answered
 # Valid options are: "U.S. Citizen/Permanent Resident", "Non-citizen allowed to work for any employer", "Non-citizen allowed to work for current employer", "Non-citizen seeking work authorization", "Canadian Citizen/Permanent Resident" or "Other"
-us_citizenship = "U.S. Citizen/Permanent Resident"
+us_citizenship = "Non-citizen allowed to work for any employer"
 
 
 # What is the link to your portfolio website, leave it empty as "", if you want to leave this question unanswered
-website = "www.example.bio"                       # "www.example.bio" or "" and so on....
+website = "www.apportunity.io"                       # "www.example.bio" or "" and so on....
 
 # What to enter in your desired salary question, only enter in numbers inside quotes as some companies only allow numbers
-desired_salary = "90000"          # "80000", "90000", "100000" or "120000" and so on....
+desired_salary = "1"          # "80000", "90000", "100000" or "120000" and so on....
 
 # Example question: "On a scale of 1-10 how much experience do you have building web or mobile applications? 1 being very little or only in school, 10 being that you have built and launched applications to real users"
-confidence_level = "7"             # Any number between "1" to "10" including 1 and 10, put it in quotes ""
+confidence_level = "10"             # Any number between "1" to "10" including 1 and 10, put it in quotes ""
 
 current_city = ""                  # If left empty will fill in location of jobs location.
 
-first_name = "First"                 # Your first name in quotes Eg: "First", "Sai"
-middle_name = "Middle"            # Your name in quotes Eg: "Middle", "Vignesh", ""
-last_name = "Last"                # Your last name in quotes Eg: "Last", "Golla"
+first_name = "Suleman"                 # Your first name in quotes Eg: "First", "Sai"
+middle_name = ""            # Your name in quotes Eg: "Middle", "Vignesh", ""
+last_name = "Imdad"                # Your last name in quotes Eg: "Last", "Golla"
 
 # Your LinkedIn headline in quotes Eg: "Software Engineer @ Google, Masters in Computer Science", "Recent Grad Student @ MIT, Computer Science"
-headline = "Headline"
+headline = "Principal Mobile Architect and AI Researcher"
 
 # Your summary in quotes, use \n to add line breaks
-summary = "Summary"
+summary = """As a seasoned Principal Mobile Architect and Lead with over 16 years of experience, I am deeply passionate about the transforma-
+tive power of technology. Currently pursuing a Masters in AI from Johns Hopkins University and enrolled in a Postgraduate Certif-
+cate program at Caltech part-time, I am committed to staying at the forefront of AI advancements. I actively contribute to the mo-
+bile development landscape, collaborating with Bay Area businesses and startups on projects. My extensive background includes
+working with prestigious companies such as Apple, GE, CBS, and Oracle, where I specialized in building pixel-perfect and well-en-
+gineered native iOS apps using SwiftUI and Combine."""
 
 # Your cover letter in quotes, use \n to add line breaks
-cover_letter = "Cover Letter"
+cover_letter = """
+Suleman Imdad
+Principal Mobile Architect and AI Researcher
+Marina Del Ray, CA
+Email: suleman361@gmail.com
+Phone: (408) 601-7007
+
+Dear Hiring Manager,
+
+I am writing to express my interest in this position within your esteemed organization. With over 16 years of experience as a Principal Mobile Architect and Lead, I have honed my skills in creating innovative and high-performance mobile applications for a variety of platforms and clients. My extensive background in mobile development, combined with my ongoing education in Artificial Intelligence at Johns Hopkins University and Caltech, makes me a strong candidate for this role.
+Throughout my career, I have had the opportunity to work with renowned companies such as Apple, GE, CBS, and Oracle. My roles have allowed me to develop a deep proficiency in SwiftUI, Combine, and other modern frameworks and technologies that are critical for developing responsive and scalable mobile applications. I am also adept at leading cross-functional teams and managing complex projects from conception to completion. Some highlights of my career include:
+	•	Leading the development of mobile applications for high-profile clients such as Southwest Airlines, Nike, Walmart, and others, ensuring robust performance and exceptional user experiences.
+	•	Spearheading the re-architecture of native applications to leverage SwiftUI, enhancing user interfaces and optimizing performance.
+	•	Contributing to the advancement of AI-powered mobile applications, such as the KF Advance app, which uses AI to help users improve their interview skills.
+
+I am particularly skilled in bridging the gap between existing technologies and new, innovative solutions. My experience with UIKit and AppKit allows me to integrate modern SwiftUI views with existing iOS and macOS interfaces seamlessly. Additionally, my proficiency in backend development, cross-platform application development, and database management ensures that I can contribute to all aspects of mobile application development.
+
+I am excited about the opportunity to bring my expertise to your organization and contribute to the development of cutting-edge apps that drive user engagement and satisfaction. I am confident that my background, skills, and passion for technology will make me a valuable addition to your team.
+Thank you for considering my application. I look forward to the opportunity to discuss how my experience and skills align with the needs of your organization.
+
+Sincerely,
+Suleman Imdad
+"""
 
 
 ## US Equal Opportunity questions
@@ -145,12 +173,12 @@ cover_letter = "Cover Letter"
 ethnicity = "Decline"              # "Decline", "Hispanic/Latino", "American Indian or Alaska Native", "Asian", "Black or African American", "Native Hawaiian or Other Pacific Islander", "White", "Other"
 
 # How do you identify yourself? If left empty as "", tool will not answer the question. However, note that some companies make compulsory to be answered
-gender = "Decline"                 # "Male", "Female", "Other", "Decline" or ""
+gender = "Male"                 # "Male", "Female", "Other", "Decline" or ""
 
 # Are you physically disabled? If left empty as "", tool will not answer the question. However, note that some companies make it compulsory to be answered
-disability_status = "Decline"      # 
+disability_status = "No"      #
 
-veteran_status = "Decline"         # "Yes", "No", "Decline"
+veteran_status = "No"         # "Yes", "No", "Decline"
 ##
 
 
@@ -182,17 +210,17 @@ security_clearance = False         # True or False
 did_masters = True                 # True or False
 
 # Avoid applying to jobs if their required experience is above your current_experience. (Set value as -1 if you want to apply to all ignoring their required experience...)
-current_experience = 1             # Integers > -2 (Ex: -1, 0, 1, 2, 3, 4...)
+current_experience = 13             # Integers > -2 (Ex: -1, 0, 1, 2, 3, 4...)
 ##
 
 
 ## Allow Manual Inputs
 # Should the tool pause before every submit application during easy apply to let you check the information?
-pause_before_submit = True         # True or False ,   Will be treated as False if run_in_background is True
+pause_before_submit = False         # True or False ,   Will be treated as False if run_in_background is True
 
 # Should the tool pause if it needs help in answering questions during easy apply?
 # Note: If set as False will answer randomly...
-pause_at_failed_question = True    # True or False ,   Will be treated as False if run_in_background is True
+pause_at_failed_question = False    # True or False ,   Will be treated as False if run_in_background is True
 ##
 
 # Keep the External Application tabs open? (Note: RECOMMENDED TO LEAVE IT AS TRUE, if you set it false, be sure to CLOSE ALL TABS BEFORE CLOSING THE BROWSER!!!)
@@ -221,13 +249,13 @@ stop_date_cycle_at_24hr = True     # True or False
 # ----------------------------------------------  RESUME GENERATOR (Experimental & In Development)  ---------------------------------------------- #
 
 # Login Credentials for ChatGPT
-chatGPT_username = "username@example.com"
-chatGPT_password = "example_password"
+chatGPT_username = "emale19@msn.com"
+chatGPT_password = "Godisgreat19"
 
 chatGPT_resume_chat_title = "Resume review and feedback."
 
 # Give the path to the folder where all the generated resumes are to be stored
-generated_resume_path = "all resumes/"
+generated_resume_path = "resumes/"
 
 
 
